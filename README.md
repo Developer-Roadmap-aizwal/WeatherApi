@@ -16,6 +16,7 @@ Automatic cache expiration (12-hour default)
 Requirements
 ---------------
 Java 17 (LTS version)
+Maven
 Redis
 Visual Crossing API key (or alternative weather API)
 
@@ -23,22 +24,21 @@ Installation
 ---------------
 Steps
 Clone the repository: git clone https://github.com/your-username/weather-api.git
-Install dependencies: npm install or yarn install
+Install dependencies: mvn clean install (Maven) 
 Set environment variables:
-WEATHER_API_KEY: Your Visual Crossing API key
-REDIS_HOST: Your Redis host URL
-REDIS_PORT: Your Redis port
-Start the server: npm start or yarn start
+WEATHER_API_KEY : Your Visual Crossing API key
+REDIS_HOST : Your Redis host URL
+REDIS_PORT : Your Redis port
+Run the application: mvn spring-boot:run (Maven)
 
 Usage
 ---------
 API Endpoints
 Get Weather Data
-GET /weather/:city: Fetch weather data for a specific city
-GET /weather/:city/:state/:country: Fetch weather data for a specific location
+GET api/weather/:city: Fetch weather data for a specific city
 Example Request
 Bash
-GET /weather/New%20York
+GET /weather/Bangalore
 Example Response
 JSON
 {
