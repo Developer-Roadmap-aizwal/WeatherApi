@@ -2,7 +2,7 @@ Weather API
 ================
 Overview
 ------------
-Github users activity project from roadmap.sh https://roadmap.sh/projects/weather-api-wrapper-service
+Weather API project from roadmap.sh https://roadmap.sh/projects/weather-api-wrapper-service
 
 A weather API that fetches and returns weather data from a 3rd party API, utilizing caching and environment variables.
 
